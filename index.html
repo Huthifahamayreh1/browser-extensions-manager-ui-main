@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Browser extensions manager UI</title>
 
@@ -14,67 +15,40 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-<div></div>
-  Extensions List
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
 
-  All
-  Active
-  Inactive
+    <div class="container">
+        <header class="main-header">
+            <div class="logo">
+                <img src="./assets/images/logo.svg" alt="logo">
+                <span>Extensions</span>
+            </div>
+            <button id="theme-toggle" class="icon-btn">
+                <img id="theme-icon" src="./assets/images/icon-sun.svg" alt="mode">
+            </button>
+        </header>
 
-  <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+        <section class="controls-row">
+            <h1>Extensions List</h1>
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="inactive">Inactive</button>
+            </div>
+        </section>
 
-  DevLens
-  Quickly inspect page layouts and visualize element boundaries.
-  Remove
+        <main id="extensions-grid" class="cards-grid"></main>
+    </div>
 
-  StyleSpy
-  Instantly analyze and copy CSS from any webpage element.
-  Remove
-
-  SpeedBoost
-  Optimizes browser resource usage to accelerate page loading.
-  Remove
-
-  JSONWizard
-  Formats, validates, and prettifies JSON responses in-browser.
-  Remove
-
-  TabMaster Pro
-  Organizes browser tabs into groups and sessions.
-  Remove
-
-  ViewportBuddy
-  Simulates various screen resolutions directly within the browser.
-  Remove
-
-  Markup Notes
-  Enables annotation and notes directly onto webpages for collaborative debugging.
-  Remove
-
-  GridGuides
-  Overlay customizable grids and alignment guides on any webpage.
-  Remove
-
-  Palette Picker
-  Instantly extracts color palettes from any webpage.
-  Remove
-
-  LinkChecker
-  Scans and highlights broken links on any page.
-  Remove
-
-  DOM Snapshot
-  Capture and export DOM structures quickly.
-  Remove
-
-  ConsolePlus
-  Enhanced developer console with advanced filtering and logging.
-  Remove
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <script src="script.js"></script>
+</body>
 </body>
 </html>
