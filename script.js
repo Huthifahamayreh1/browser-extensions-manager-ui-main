@@ -1,5 +1,5 @@
 const grid = document.getElementById('extensions-grid');
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggle = document.getElementById('theme-toذذggle');
 const themeIcon = document.getElementById('theme-icon');
 
 let extensions = [];
